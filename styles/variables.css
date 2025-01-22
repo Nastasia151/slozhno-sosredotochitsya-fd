@@ -3,12 +3,19 @@
   и их переопределение под различные устройства
 */
 :root {
-  --main-color: #000028;
-  --accent-color: #FF0070;
-  --hover-border-color: rgb(255,0,112,0.4);
-  --text-color: #F1B2CE;
-  --logo-color: #DB00FF;
   --main-font: 'IBM Plex mono';
   --padding: 10px;
   --bg-image: url(../images/cover-image-dark.png);
+  --dark-blue: #000028;
+  --purple: #FF0070;
+  --purple-transparency:  rgb(255,0,112,0.4);
+  --light-lavender: #F1B2CE;
+  --fuchsia:#DB00FF;
+  --pink-lavander: #FFF1F7;
+  --pink-purple: #FF8DCB;
+  --dark-transparency: rgb(0,0,40,0.4);
+  --dark: #353430;
+  --pink: #FFC2E6;
+  --icon-visible: block;
+  --icon-hidden: none;
 }

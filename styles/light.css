@@ -10,53 +10,18 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --main-color: #FFF1F7;
-  --accent-color: #FF8DCB;
-  --hover-border-color: rgb(0,0,40,0.4);
-  --text-color: #353430;
-  --logo-color: #FFC2E6;
+  --main-bg-color: var(--pink-lavander);
+  --accent-subtitle-bg-color: var(--pink-purple);
+  --accent-subtitle-text-color: var(--dark-blue);
+  --main-title-text-color: var(--dark);
+  --decor-color: var(--dark);
+  --menu-text-color: var(--dark);
+  --hover-border-color: var(--dark-transparency);
+  --text-color: var(--dark);
+  --logo-color: var(--pink);
+  --shadow-color: var(--pink-purple);
   --main-font: 'IBM Plex mono';
   --padding: 10px;
   --bg-image: url(../images/cover-image-light.png);
-}
-
-.theme-light .page {
-  background-color: var(--main-color, #FFF1F7);
-  background-image: var(--bg-image, url(../images/cover-image-light.png));
-}
- 
-.theme-light .accent-subtitle {
-  color: var(--text-color, #353430);
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--text-color, #353430);
-}
-
-.theme-light .main-title {
-  color: var(--text-color, #353430);  
-}
-
-.theme-light .header__theme-dark__REC-icon {
-  display: none;
-}
-
-.theme-light .header::before {
-  border-top: 1px solid var(--text-color, #353430);
-  border-right: 1px solid var(--text-color, #353430);
-}
-
-.theme-light .header::after {
-  border-left: 1px solid var(--text-color, #353430);
-  border-bottom: 1px solid var(--text-color, #353430);
-}
-
-.theme-light .footer_title::before {
-  border-top: 1px solid var(--text-color, #353430);
-  border-right: 1px solid var(--text-color, #353430);
-}
-
-.theme-light .footer_title::after {
-  border-left: 1px solid var(--text-color, #353430);
-  border-bottom: 1px solid var(--text-color, #353430);
+  --REC-icon: var(--icon-hidden);
 }
