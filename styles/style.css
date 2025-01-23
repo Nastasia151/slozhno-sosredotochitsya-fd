@@ -18,7 +18,7 @@
   align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-  padding: var(--padding, 10px); 
+  padding: var(--padding, 10px);
 }
 
 .header::before {
