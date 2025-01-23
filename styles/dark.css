@@ -10,19 +10,19 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --main-bg-color: var(--dark-blue);
-  --accent-subtitle-bg-color: var(--purple);
-  --accent-subtitle-text-color: var(--dark-blue);
-  --main-title-text-color: var(--purple);
-  --decor-color: var(--purple);
-  --menu-text-color: var(--purple);
-  --hover-border-color: var(--purple-transparency);
-  --text-color: var(--light-lavender);
-  --logo-color: var(--fuchsia);
-  --shadow-color: var(--purple);
+  --main-bg-color: var(--dark-blue, #000028);
+  --accent-subtitle-bg-color: var(--purple, #FF0070);
+  --accent-subtitle-text-color: var(--dark-blue, #000028);
+  --main-title-text-color: var(--purple, #FF0070);
+  --decor-color: var(--purple, #FF0070);
+  --menu-text-color: var(--purple, #FF0070);
+  --hover-border-color: var(--purple-transparency, rgb(255,0,112,0.4));
+  --text-color: var(--light-lavender, #F1B2CE);
+  --logo-color: var(--fuchsia, #DB00FF);
+  --shadow-color: var(--purple, #FF0070);
   --main-font: 'IBM Plex mono';
   --padding: 10px;
   --bg-image: url(../images/cover-image-dark.png);
-  --REC-icon: var(--icon-visible);
+  --REC-icon: var(--icon-visible, block);
 }
 

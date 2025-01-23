@@ -1,5 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   font-family: var(--main-font, sans-serif);
   font-size: 18px;
@@ -18,12 +16,9 @@
   position: relative;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  gap: 2px;
   block-size: 100vh;
   min-block-size: 668px;
-  padding-inline: var(--padding);
-  padding-block-start: 9px;
-  padding-block-end: var(--padding)
+  padding: var(--padding, 10px);  
 }
 
 .header::before {
@@ -34,7 +29,7 @@
   border-top: 1px solid var(--decor-color, #FF0070);
   border-right: 1px solid var(--decor-color, #FF0070);
   inset-inline-start: calc(100% - var(--padding) - 25px);
-  inset-block-start: var(--padding);
+  inset-block-start: var(--padding, 10px);
  }
 
 .header::after {
@@ -44,8 +39,8 @@
   block-size: 25px;
   border-left: 1px solid var(--decor-color, #FF0070);
   border-bottom: 1px solid var(--decor-color, #FF0070);
-  inset-inline-start: var(--padding);
-  inset-block-end: var(--padding);
+  inset-inline-start: var(--padding, 10px);
+  inset-block-end: var(--padding, 10px);
 } 
 
 .header__theme-menu {
@@ -68,11 +63,11 @@
   color: var(--menu-text-color, #FF0070);
   font-size: 18px;
   line-height: 105%;
-  padding: 2.5px 13px;
+  padding: 0.17em 13px;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid currentColor;
+  border: 1px solid currentColor;
   pointer-events: none;
 }
 
@@ -90,7 +85,6 @@
 
 .title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-weight: 700;
   line-height: 0.825;
   color: var(--logo-color, #DB00FF);
 }
@@ -102,7 +96,7 @@
 .accent-subtitle {
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.295;
+  line-height: 1.3;
   background-color: var(--accent-subtitle-bg-color, #FF0070);
   color: var(--accent-subtitle-text-color, #000028);
 }
@@ -113,7 +107,7 @@
   font-size: 18px;
   color: var(--decor-color, #FF0070);
   inset-inline-end: 2.1em;
-  inset-block-start: calc(var(--padding) + 2px);
+  inset-block-start: calc(var(--padding, 10px) + 2px);
 }
 
 .header__REC-icon::after {
@@ -133,7 +127,7 @@
   grid-template-columns: 1fr;
   gap: 50px;
   margin-block-start: 40px;
-  padding-inline: var(--padding);
+  padding-inline: var(--padding, 10px);
 }
 
 .content-section {
@@ -145,7 +139,6 @@
 .main-title {
   color: var(--main-title-text-color, #FF0070);
   font-size: 18px;
-  line-height: 1.3;
 }
 
 .card-list {
@@ -162,13 +155,15 @@
 
 .advices-card-title {
   font-weight: 400;
-  line-height: 1.3;
+}
+
+.advices__card-list {
+  margin-block-start: 20px;
 }
 
 .card-text {
   color: var(--text-color, #F1B2CE);
   font-size: 18px;
-  line-height: 1.3;
 }
 
 .card-text a {
@@ -204,7 +199,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
+} 
 
 .footer_title {
   position: relative;
@@ -213,8 +208,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-inline: var(--padding);
-  margin-block-start: 41px;
+  margin-block-start: 40px;
   min-height: 100vh;
 }
 
@@ -225,8 +219,8 @@
   block-size: 25px;
   border-top: 1px solid var(--decor-color, #FF0070);
   border-right: 1px solid var(--decor-color, #FF0070);
-  inset-inline-start: calc(100% - var(--padding) - 25px);
-  inset-block-start: var(--padding);
+  inset-inline-start: calc(100% - var(--padding, 10px) - 25px);
+  inset-block-start: var(--padding, 10px);
 } 
 
 .footer_title::after {
@@ -236,8 +230,8 @@
   block-size: 25px;
   border-left: 1px solid var(--decor-color, #FF0070);
   border-bottom: 1px solid var(--decor-color, #FF0070);
-  inset-inline-start: var(--padding);
-  inset-block-end: var(--padding);
+  inset-inline-start: var(--padding, 10px);
+  inset-block-end: var(--padding, 10px);
 } 
 
 /* адаптив */
@@ -249,22 +243,15 @@
   }
 
   .header {
-    padding-inline-start: 0;
-    min-block-size: 1024px;
-    block-size: 100vh;
-  }
-
-  .header__theme-menu-button {
-    padding: 3px 12.5px;
+    padding-left: 0;
   }
 
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    line-height: 0.8;
   }
-
+  
   .header-subtitle {
-    padding-inline-start: var(--padding);
+    padding-inline-start: var(--padding, 20px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-self: end;
@@ -276,31 +263,26 @@
 
   .header__REC-icon {
     inset-inline-end: 48px;
-    inset-block-start: calc(var(--padding) + 2px);
+    inset-block-start: calc(var(--padding, 20px) + 2px);
   }
 
   .content {
     gap: 80px;
     margin-block-start: 60px;
-    padding-inline: var(--padding);
+    padding-inline: var(--padding, 20px);
   }
 
-  .content-section {
+ .content-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
   .section__how-to-focus .main-title {
-    grid-row: 1 / 3;
+     grid-row: 1 / 3;
   }
 
   .section__reasons .card-list {
     grid-column: 1 / 4;
-  }
-
-  .advices-card-title {
-    font-weight: 400;
-    line-height: 1.3;
   }
 
   .gallery__content-section {
@@ -309,7 +291,7 @@
 
   .gallery {
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    gap: 20px;  
   }
 
   .gallery-image:nth-child(1) {
@@ -349,18 +331,9 @@
 }
 
 @media (width >= 1024px) {
-  .page {
-    --padding: 20px;
-  }
-
-  .header {
-    min-block-size: 768px;
-    block-size: 100vh;
-    padding-block-start: 21px;
-  }
-
   .header__theme-menu {
-    padding-left: var(--padding);
+    margin-top: 0;
+    padding-left: var(--padding, 20px);
     justify-self: center;
     align-self: start;
   }
@@ -368,20 +341,7 @@
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-    gap: 11px;
-  }
-
-  .header__theme-menu-button {
-    padding: 3px 13px;
-  }
-   
-  .header-subtitle {
-    padding-left: 22px;
-  }
-
-  .content {
-    padding-inline-start: 20px;
-    margin-block-start: 60px;
+    gap: 10px;
   }
 
   .content-section {
@@ -404,25 +364,24 @@
     grid-column: 2 / 4;
   }
   
- }
-
+}
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-bg-color: var(--pink-lavander);
-    --accent-subtitle-bg-color: var(--pink-purple);
-    --accent-subtitle-text-color: var(--dark-blue);
-    --main-title-text-color: var(--dark);
-    --decor-color: var(--dark);
-    --menu-text-color: var(--dark);
-    --hover-border-color: var(--dark-transparency);
-    --text-color: var(--dark);
-    --logo-color: var(--pink);
-    --shadow-color: var(--pink-purple);
-    --main-font: 'IBM Plex mono';
-    --padding: 10px;
-    --bg-image: url(../images/cover-image-light.png);
-    --REC-icon: var(--icon-hidden);
+    --main-bg-color: var(--pink-lavander, #FFF1F7);
+  --accent-subtitle-bg-color: var(--pink-purple, #FF8DCB);
+  --accent-subtitle-text-color: var(--dark, #353430);
+  --main-title-text-color: var(--dark, #353430);
+  --decor-color: var(--dark, #353430);
+  --menu-text-color: var(--dark, #353430);
+  --hover-border-color: var(--dark-transparency, rgb(0,0,40,0.4));
+  --text-color: var(--dark, #353430);
+  --logo-color: var(--pink, #FFC2E6);
+  --shadow-color: var(--pink-purple, #FF8DCB);
+  --main-font: 'IBM Plex mono';
+  --padding: 10px;
+  --bg-image: url(../images/cover-image-light.png);
+  --REC-icon: var(--icon-hidden, none);
   }
 } 
 
