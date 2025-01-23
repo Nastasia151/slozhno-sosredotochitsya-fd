@@ -421,7 +421,7 @@
     --shadow-color: var(--pink-purple);
     --main-font: 'IBM Plex mono';
     --padding: 10px;
-    --bg-image: url(../images/cover-image-light.png);
+   
     --REC-icon: var(--icon-hidden);
   }
 } 

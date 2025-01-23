@@ -5,7 +5,8 @@
 :root {
   --main-font: 'IBM Plex mono';
   --padding: 10px;
-  --bg-image: url(../images/cover-image-dark.png);
+  --bg-image-dark: url(../images/cover-image-dark.png);
+  --bg-image-light: url(../images/cover-image-light.png);
   --dark-blue: #000028;
   --purple: #FF0070;
   --purple-transparency:  rgb(255,0,112,0.4);
