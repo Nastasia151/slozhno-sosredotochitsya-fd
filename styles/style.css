@@ -18,7 +18,7 @@
   align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-  padding: var(--padding, 10px);  
+  padding: var(--padding, 10px); 
 }
 
 .header::before {
@@ -291,7 +291,7 @@
 
   .gallery {
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;  
+    gap: 20px;
   }
 
   .gallery-image:nth-child(1) {
