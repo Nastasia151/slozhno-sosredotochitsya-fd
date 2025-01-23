@@ -5,8 +5,6 @@
 :root {
   --main-font: 'IBM Plex mono';
   --padding: 10px;
-  --bg-image-dark: url(../images/cover-image-dark.png);
-  --bg-image-light: url(../images/cover-image-light.png);
   --dark-blue: #000028;
   --purple: #FF0070;
   --purple-transparency:  rgb(255,0,112,0.4);
@@ -19,4 +17,23 @@
   --pink: #FFC2E6;
   --icon-visible: block;
   --icon-hidden: none;
+
+  --main-bg-color: var(--dark-blue, #000028);
+  --accent-subtitle-bg-color: var(--purple, #FF0070);
+  --accent-subtitle-text-color: var(--dark-blue, #000028);
+  --main-title-text-color: var(--purple, #FF0070);
+  --decor-color: var(--purple, #FF0070);
+  --menu-text-color: var(--purple, #FF0070);
+  --hover-border-color: var(--purple-transparency, rgb(255,0,112,0.4));
+  --text-color: var(--light-lavender, #F1B2CE);
+  --logo-color: var(--fuchsia, #DB00FF);
+  --shadow-color: var(--purple, #FF0070);
+  --bg-image: url(../images/cover-image-dark.png);
+  --REC-icon: var(--icon-visible, block);
+}
+
+@media (width >= 768px) {
+  .page{
+    --padding: 20px;
+  }
 }
