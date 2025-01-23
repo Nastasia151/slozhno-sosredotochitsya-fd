@@ -361,8 +361,7 @@
   .header {
     min-block-size: 768px;
     block-size: 100vh;
-    padding-block-start: 20px;
-    padding-block-end: 19px;
+    padding-block-start: 21px;
   }
 
   .header__theme-menu {
@@ -376,6 +375,10 @@
     flex-direction: row;
     gap: 11px;
   }
+
+  .header__theme-menu-button {
+    padding: 3px 13px;
+  }
    
   .header-subtitle {
     padding-left: 22px;
@@ -383,7 +386,7 @@
 
   .content {
     padding-inline-start: 20px;
-    gap: 80px;
+    margin-block-start: 61px;
   }
 
   .content-section {
@@ -400,12 +403,20 @@
 
   .section__how-to-focus .accent-subtitle {
     grid-column: 2 / 4;
+    line-height: 1.28;
   }
 
   .section__how-to-focus .card-list {
     grid-column: 2 / 4;
   }
 
+  .advices-card-title {
+    line-height: 1.5;
+  }
+
+  .section__how-to-focus .card-text {
+    line-height: 1.301;
+  }
  }
 
 
