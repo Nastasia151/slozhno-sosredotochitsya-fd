@@ -361,7 +361,8 @@
   .header {
     min-block-size: 768px;
     block-size: 100vh;
-    padding-block-start: 18px;
+    padding-block-start: 20px;
+    padding-block-end: 19px;
   }
 
   .header__theme-menu {
@@ -382,6 +383,7 @@
 
   .content {
     padding-inline-start: 20px;
+    gap: 80px;
   }
 
   .content-section {
