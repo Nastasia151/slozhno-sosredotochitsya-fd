@@ -260,7 +260,7 @@
 
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    line-height: 0.8; 
+    line-height: 0.8;
   }
 
   .header-subtitle {
@@ -291,7 +291,7 @@
   }
 
   .section__how-to-focus .main-title {
-     grid-row: 1 / 3;
+    grid-row: 1 / 3;
   }
 
   .section__reasons .card-list {
@@ -398,13 +398,11 @@
 
   .section__how-to-focus .accent-subtitle {
     grid-column: 2 / 4;
-    line-height: 1.28;
   }
 
   .section__how-to-focus .card-list {
     grid-column: 2 / 4;
   }
-
   
  }
 
