@@ -361,7 +361,7 @@
   .header {
     min-block-size: 768px;
     block-size: 100vh;
-    padding-block-start: 20px;
+    padding-block-start: 18px;
   }
 
   .header__theme-menu {
@@ -421,7 +421,7 @@
     --shadow-color: var(--pink-purple);
     --main-font: 'IBM Plex mono';
     --padding: 10px;
-   
+    --bg-image: url(../images/cover-image-light.png);
     --REC-icon: var(--icon-hidden);
   }
 } 
