@@ -33,7 +33,7 @@
 }
 
 @media (width >= 768px) {
-  .page{
+  .page {
     --padding: 20px;
   }
 }
